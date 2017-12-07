@@ -179,6 +179,10 @@ dataset[
         Variable := "Residential Mobility"
     ]
 
+#Sort columns
+dataset <- dataset %>% 
+  arrange(Town, Year, `Poverty Status`, desc(Variable))
+
 write.table(
     dataset,
     file.path(getwd(), "data", "mobility_by_poverty_status_2016.csv"),
