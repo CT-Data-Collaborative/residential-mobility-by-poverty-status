@@ -185,7 +185,7 @@ dataset <- dataset %>%
 
 write.table(
     dataset,
-    file.path(getwd(), "data", "mobility_by_poverty_status_2016.csv"),
+    file.path(getwd(), "data", "mobility_by_poverty_status_2018.csv"),
     sep = ",",
     row.names = F,
     na = "-6666"
